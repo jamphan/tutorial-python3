@@ -10,7 +10,7 @@ Explaination:
     - The input() function polls the user for input; the optional first-argument
       is a prompt message that will be displayed before polling
 
-    - In line 17 we shorten our code by doing several operations in one-line.
+    - In line 29 we shorten our code by doing several operations in one-line.
       We perform the int() operation on whatever the input() function will return
 
     - We have multiple branches in our if-else block; If the first statement does
