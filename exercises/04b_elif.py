@@ -28,15 +28,11 @@ Activity:
 
 age = int(input("How old are you?"))
 
-if (age.isnumeric() == True):
-    if (age > 10):
-        print("You're a teenager")
-    elif (age > 19):
-        print("You're a young adult")
-    elif (age > 25):
-        print("You're probably having a mid-life crisis right now")
-    else:
-        print("You're getting old")
-
+if (age > 25):
+    print("You're probably having a mid-life crisis right now")
+elif (age > 19): #Short for "else if"
+    print("You're a young adult")
+elif (age > 10):
+    print("You're a teenager")
 else:
-    print("Must enter a number")
+    print("You're pretty young")

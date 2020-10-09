@@ -3,10 +3,12 @@
 Ex. 04b
 
 Summary:
-    - TODO
+    - We determine what to call someone based on their age and gender
 
 Explaination:
-    - TODO
+    - Line ##: This is an alternative way of "declaring" variables; languages often
+      provide multiple ways of declaring variables.
+
 
 """
 # ==================================================================================================
