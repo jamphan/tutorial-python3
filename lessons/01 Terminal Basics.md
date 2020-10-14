@@ -1,13 +1,13 @@
-# Lesson 01: Basics
+# Lesson 01: Terminal Basics
 
 <!-- TOC depthFrom:2 orderedList:true -->
 
 1. [Part A: Opening your Terminal:](#part-a-opening-your-terminal)
     1. [Windows](#windows)
     2. [Mac](#mac)
-2. [Part B: Terminal Basics, `cd` Moving to a Folder](#part-b-terminal-basics-cd-moving-to-a-folder)
-3. [Part C: Terminal Basics, `cd ..` Moving up](#part-c-terminal-basics-cd--moving-up)
-4. [Part D: Terminal Basics, `ls` Looking inside](#part-d-terminal-basics-ls-looking-inside)
+2. [Part B: `cd`, Moving to a Folder](#part-b-cd-moving-to-a-folder)
+3. [Part C: `cd ..`, Moving up](#part-c-cd--moving-up)
+4. [Part D: `ls`, Looking inside](#part-d-ls-looking-inside)
 
 <!-- /TOC -->
 
@@ -53,7 +53,7 @@ jamphan-mac:~ jamphan$
     - `jamphan` is my username, you should see your own.
     - `$` is the prompt to signal where the text you enter will start.
 
-## Part B: Terminal Basics, `cd` Moving to a Folder
+## Part B: `cd`, Moving to a Folder
 
 **For simplicity, I'm just going to use `$` as shorthand for the prompt, do not enter this character in!**
 
@@ -78,7 +78,7 @@ You should see your prompt change:
     - For max, that is `/Users/<your username>/`
 - Every home directory has a `Desktop` folder by default, and if you followed the first step, you made a folder on your desktop called `pytutes`.
 
-## Part C: Terminal Basics, `cd ..` Moving up
+## Part C: `cd ..`, Moving up
 
 Now type:
 
@@ -97,7 +97,7 @@ $ cd ..
 
 - You should now be in `~` your Home directory.
 
-## Part D: Terminal Basics, `ls` Looking inside
+## Part D: `ls`, Looking inside
 
 In your home directory (type `cd ~` if you're not there),
 
