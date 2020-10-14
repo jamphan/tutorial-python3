@@ -23,11 +23,11 @@ Explaination:
             need to use the value of the variable. In this case, we just want to count the number of times
             the for-loop iterates, and never use the variable.
 
-    - `..."There are {:d}...` (Line 50)
-            The "{:d}" is a placeholder; whenever you see something like "{:}", you know it is a placeholder.
-            The "d" character here tells Python that its holding a place for a "digit" (Integer).
-            We then substitute the value into the string with the `.format()` method.
-            This is called String-Formatting.
+    - f"there are {n_movies}" (Line 50)
+            This is called a "f-string" as seen with the leading 'f' character before the opening quotation.
+            This provides an easy way to substitute expressions/variables into strings without having to use
+            clunky concatenation/formatting. You simply specify a variable to "format into" a string by using
+            curly braces. Remember, this can only be done if the 'f' character precedes the string.
 """
 # ==================================================================================================
 
@@ -47,5 +47,4 @@ n_movies = 0
 for _ in all_star_war_movies:
     n_movies += 1
 
-string_format = "There are {:d} star-wars movies in total"
-print(string_format.format(n_movies))
+print(f"There are {n_movies} star-wars movies in total")
