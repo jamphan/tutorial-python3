@@ -35,7 +35,7 @@ for tweet in bill_gates_tweets:
         preproc_tweet = preproc_tweet.replace(special_char, '')
 
     # Split the sentence into words
-    split_sentence = preproc_tweet.split(' ')
+    split_sentence = preproc_tweet.split()
 
     # For every word in the sentence...
     for word in split_sentence:

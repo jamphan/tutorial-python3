@@ -7,30 +7,38 @@ HRULE = "="*80
 # In between, we also have the escapae sequences "\n" (newline) and "\t" (tab) to make things look
 # pretty.
 header = "Simple range"
-print(f"{HRULE}\n\t{header}\n{HRULE}")
+print(f"\n{HRULE}\n\t{header}\n{HRULE}")
 for num in range(0,10):
     print(num)
 
 header = "Even numbers"
-print(f"{HRULE}\n\t{header}\n{HRULE}")
+print(f"\n{HRULE}\n\t{header}\n{HRULE}")
 for even_nums in range(0,10,2):
     print(even_nums)
 
 header = "Character sequences, Strings"
-print(f"{HRULE}\n\t{header}\n{HRULE}")
+print(f"\n{HRULE}\n\t{header}\n{HRULE}")
 for char in "Hello, World!":
     print(char)
 
 header = "Lists"
-print(f"{HRULE}\n\t{header}\n{HRULE}")
+print(f"\n{HRULE}\n\t{header}\n{HRULE}")
 for ele in ["a", 1, "b", 2, "c", 3]:
     print(ele)
 
 # Zip is a built-in function, it allows you to iterate multiple objects at once.
 # In our case, we iterate two lists, each iterable list being assigned to a separate variable.
 header = "Two lists at the same time"
-print(f"{HRULE}\n\t{header}\n{HRULE}")
+print(f"\n{HRULE}\n\t{header}\n{HRULE}")
 listA = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
 listB = [1, 2, 3, 4, 5, 6, 7, 8]
 for aa, bb in zip(listA, listB):
     print(f"Value from A: {aa}\t Value from B: {bb}")
+
+# The .split() string method will break up a string into an list of sub-strings based on some
+# separating character. By default, it is the space character.
+# If you have a comma-separted string such as "item1, item2, item3" you can use .split(",")
+header = "Splitting up a sentence"
+print(f"\n{HRULE}\n\t{header}\n{HRULE}")
+for word in "The quick brown fox jumps over the lazy dog".split():
+    print(word)
