@@ -1,4 +1,27 @@
-## Lesson 07: Checkpoint
+# Lesson 07: Checkpoint
+
+<!-- TOC depthFrom:2 orderedList:true -->
+
+1. [Built-in Functions](#built-in-functions)
+2. [String Methods](#string-methods)
+3. [Booleans](#booleans)
+4. [Arrays](#arrays)
+    1. [Indexing Arrays](#indexing-arrays)
+    2. [Array Methods](#array-methods)
+5. [If-Blocks](#if-blocks)
+6. [For-loops and Iterables](#for-loops-and-iterables)
+
+<!-- /TOC -->
+
+## Built-in Functions
+
+|Function|Description|Example|
+|---|---|---|
+|[`input()`](https://docs.python.org/3/library/functions.html#input)|Polls the user for input, and returns the entered string up-to and excluding the newline|`age = input("Enter your age> ")`
+|[`enumerate()`](https://docs.python.org/3/library/functions.html#enumerate)|Provides a counter as you iterate through a sequence|`for idx, ele in enumerate(["a", "b", "c"]):`
+|[`len()`](https://docs.python.org/3/library/functions.html#len)|Determins the number of elements in some iterable|`len("Hello") == 5`
+|[`range()`](https://docs.python.org/3/library/functions.html#func-range)|Provides a range of integers|`for ii in range(0, 10):`
+|[`zip()`](https://docs.python.org/3/library/functions.html#zip)|Allows you to iterate multiple objects at once|`for aa, bb in zip(listA, listB):`
 
 ## String Methods
 
@@ -66,9 +89,11 @@ else:
 
 ```
 
-## Iterables
+## For-loops and Iterables
 
 - Iterating a list: `for ele in ["this", "is", "a", "list"]:`
 - Iterating a string: `for char in "Hello World":`
 - Iterating a range: `for ii in range(0, 10):`
 - Iterating a range with larger step sizes: `for ii in range(0, 10, 2):`
+- Iterating two lists at once: `for aa, bb in zip(listA, listB):`
+- Iterating with a counter: `for idx, ele in enumerate(["a", "b", "c"]):`
