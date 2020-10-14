@@ -19,6 +19,7 @@
 **Truth Table**
 
 |A|B|`and`|`or`|
+|---|---|---|---
 |`True`|`True`|`a and b == True`|`a or b == True`|
 |`True`|`False`|`a and b == False`|`a or b == True`|
 |`False`|`True`|`a and b == False`|`a or b == True`|
