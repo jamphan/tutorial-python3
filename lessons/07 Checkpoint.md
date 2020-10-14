@@ -3,12 +3,16 @@
 <!-- TOC depthFrom:2 orderedList:true -->
 
 1. [Built-in Functions](#built-in-functions)
-2. [String Methods](#string-methods)
-3. [Booleans](#booleans)
-4. [Arrays](#arrays)
-    1. [Indexing Arrays](#indexing-arrays)
-    2. [Array Methods](#array-methods)
-5. [Control-Flow](#control-flow)
+2. [Data-Types](#data-types)
+    1. [Integers](#integers)
+    2. [Strings](#strings)
+        1. [String Methods](#string-methods)
+    3. [Booleans](#booleans)
+3. [Data Structures](#data-structures)
+    1. [Arrays](#arrays)
+        1. [Indexing Arrays](#indexing-arrays)
+        2. [Array Methods](#array-methods)
+4. [Control-Flow](#control-flow)
     1. [`if` to branch out](#if-to-branch-out)
     2. [`for` to iterate](#for-to-iterate)
     3. [`continue` and `break`](#continue-and-break)
@@ -25,7 +29,16 @@
 |[`range()`](https://docs.python.org/3/library/functions.html#func-range)|Provides a range of integers|`for ii in range(0, 10):`
 |[`zip()`](https://docs.python.org/3/library/functions.html#zip)|Allows you to iterate multiple objects at once|`for aa, bb in zip(listA, listB):`
 
-## String Methods
+## Data-Types
+
+### Integers
+
+- Only whole numbers
+- Cast to an integer with `int("1") == 1`
+
+### Strings
+
+#### String Methods
 
 |Method|Description|Example
 |---|---|---
@@ -33,7 +46,16 @@
 |[`.strip()`](https://docs.python.org/3/library/stdtypes.html#str.strip)|Removes leading and trailing white space|`"  ab   c   ".strip() == "ab   c"`
 |[`.split()`](https://docs.python.org/3/library/stdtypes.html#str.split)|Splits a string based on some separator, default is space|`"a,b,c".split(',') == ["a", "b", "c"]`
 
-## Booleans
+### Booleans
+
+**Inequalities**
+
+|Symbols|Description|Example
+|---|---|---
+|`>`, `>=`|Checks for greater than (or equal to)|`(5 > 10) == False`
+|`<`, `<=`|Checks for less than (or equal to)|`(10 < 5) == False`
+|`!=`|Not equal to|`(10 != 5) == True`
+|`==`|Equal to|`("A" == "a") == False`
 
 **Operators**
 
@@ -50,20 +72,21 @@
 |`False`|`True`|`a and b == False`|`a or b == True`|
 |`False`|`False`|`a and b == False`|`a or b == False`|
 
+## Data Structures
 
-## Arrays
+### Arrays
 
 ``` py
 example_list = [1, 2, 3, 4]
 ```
 
-### Indexing Arrays
+#### Indexing Arrays
 
 - `some_list[1]`: Returns the single element at index = 1 (the 2nd element)
 - `some_list[1:]`: Returns all elements starting and including index = 1 (every element but the 1st)
 - `some_list[:2]`: Returns all elements up-to and **exclusding** index = 2
 
-### Array Methods
+#### Array Methods
 
 |Method|Description|Example
 |---|---|---
