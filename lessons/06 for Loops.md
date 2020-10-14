@@ -7,6 +7,7 @@
 3. [Part C: Iterating a string](#part-c-iterating-a-string)
 4. [Part D: `zip()`, Iterating two lists at the same time](#part-d-zip-iterating-two-lists-at-the-same-time)
 5. [Part E: `enumerate()`, Getting the index as we enumerate](#part-e-enumerate-getting-the-index-as-we-enumerate)
+6. [Part F: `continue`, skipping an iteration](#part-f-continue-skipping-an-iteration)
 
 <!-- /TOC -->
 
@@ -120,3 +121,22 @@ for idx, mv in enumerate(all_star_war_movies, start=1):
 
 - Try removing `start=1` (just use `enumerate(all_star_war_movies)`), notice how the numbering is off?
 - Try iterating a string, e.g. `enumerate("Hello")`
+
+## Part F: `continue`, skipping an iteration
+
+``` py
+
+print("The Windows versions are:")
+
+for ii in range(7,11):
+
+    if (ii == 9):
+        continue
+
+    print(f"\tWindows {ii}")
+```
+
+**Explanation**:
+
+- The `continue` keyword tells Python to move on to the next iteration, cutting off execution in the block pre-maturely.
+- In our case, when the `for` loop reaches ``ii=9``, the `if` block tells the program to continue, and move onto the next iteration ``ii=10``.
