@@ -8,6 +8,7 @@
 4. [Part D: `zip()`, Iterating two lists at the same time](#part-d-zip-iterating-two-lists-at-the-same-time)
 5. [Part E: `enumerate()`, Getting the index as we enumerate](#part-e-enumerate-getting-the-index-as-we-enumerate)
 6. [Part F: `continue`, skipping an iteration](#part-f-continue-skipping-an-iteration)
+7. [Part G: `break`, stopping iteration](#part-g-break-stopping-iteration)
 
 <!-- /TOC -->
 
@@ -128,9 +129,9 @@ for idx, mv in enumerate(all_star_war_movies, start=1):
 
 print("The Windows versions are:")
 
-for ii in range(7,11):
+for ii in range(100):
 
-    if (ii == 9):
+    if (ii < 7) or (ii == 9):
         continue
 
     print(f"\tWindows {ii}")
@@ -140,3 +141,23 @@ for ii in range(7,11):
 
 - The `continue` keyword tells Python to move on to the next iteration, cutting off execution in the block pre-maturely.
 - In our case, when the `for` loop reaches ``ii=9``, the `if` block tells the program to continue, and move onto the next iteration ``ii=10``.
+
+## Part G: `break`, stopping iteration
+
+``` py
+
+print("Numbers from 0-10:")
+
+for ii in range(0, 100):
+
+    if (ii > 10):
+        break
+
+    print(ii)
+
+print("Done")
+```
+
+**Explanation**:
+
+- `break` will stop the loop, and tell Python to move on from the for-loop
