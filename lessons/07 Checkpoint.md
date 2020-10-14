@@ -8,8 +8,10 @@
 4. [Arrays](#arrays)
     1. [Indexing Arrays](#indexing-arrays)
     2. [Array Methods](#array-methods)
-5. [If-Blocks](#if-blocks)
-6. [For-loops and Iterables](#for-loops-and-iterables)
+5. [Control-Flow](#control-flow)
+    1. [`if` to branch out](#if-to-branch-out)
+    2. [`for` to iterate](#for-to-iterate)
+    3. [`continue` and `break`](#continue-and-break)
 
 <!-- /TOC -->
 
@@ -69,8 +71,9 @@ example_list = [1, 2, 3, 4]
 |[`.extend()`](https://docs.python.org/3/library/stdtypes.html#mutable-sequence-types)|Extends a list by adding another list to the end of it|`[1,2,3].extend([4,5,6]) == [1,2,3,4,5,6]`
 |[`.index()`](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)|Returns the index of an element in the list|`['a', 'b', 'c'].index('b') == 1`
 
-## If-Blocks
+## Control-Flow
 
+### `if` to branch out
 ``` py
 if (condition):
     #
@@ -89,7 +92,7 @@ else:
 
 ```
 
-## For-loops and Iterables
+### `for` to iterate
 
 - Iterating a list: `for ele in ["this", "is", "a", "list"]:`
 - Iterating a string: `for char in "Hello World":`
@@ -97,3 +100,19 @@ else:
 - Iterating a range with larger step sizes: `for ii in range(0, 10, 2):`
 - Iterating two lists at once: `for aa, bb in zip(listA, listB):`
 - Iterating with a counter: `for idx, ele in enumerate(["a", "b", "c"]):`
+
+
+### `continue` and `break`
+
+``` py
+print("The Windows Versions:")
+for ii in range(7,200):
+
+    if (ii == 9):
+        continue
+
+    if (ii > 10):
+        break
+
+    print(f"\tWindows {ii}")
+```
