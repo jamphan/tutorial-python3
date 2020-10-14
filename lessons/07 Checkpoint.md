@@ -2,22 +2,32 @@
 
 <!-- TOC depthFrom:2 orderedList:true -->
 
-1. [Built-in Functions](#built-in-functions)
-2. [Data-Types](#data-types)
+1. [Terminal](#terminal)
+2. [Built-in Functions](#built-in-functions)
+3. [Data-Types](#data-types)
     1. [Integers](#integers)
     2. [Strings](#strings)
         1. [String Methods](#string-methods)
     3. [Booleans](#booleans)
-3. [Data Structures](#data-structures)
+4. [Data Structures](#data-structures)
     1. [Arrays](#arrays)
         1. [Indexing Arrays](#indexing-arrays)
         2. [Array Methods](#array-methods)
-4. [Control-Flow](#control-flow)
+5. [Control-Flow](#control-flow)
     1. [`if` to branch out](#if-to-branch-out)
     2. [`for` to iterate](#for-to-iterate)
     3. [`continue` and `break`](#continue-and-break)
 
 <!-- /TOC -->
+
+## Terminal
+
+|Command|Description|Example|
+|---|---|---|
+|`pwd`|Print working directory|
+|`cd`|Change directory|`cd ~/Desktop`
+|`cd ..`|Go up on directory|
+|`ls`|List directory contents|
 
 ## Built-in Functions
 
