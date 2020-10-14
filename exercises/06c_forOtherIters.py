@@ -25,3 +25,12 @@ header = "Lists"
 print(f"{HRULE}\n\t{header}\n{HRULE}")
 for ele in ["a", 1, "b", 2, "c", 3]:
     print(ele)
+
+# Zip is a built-in function, it allows you to iterate multiple objects at once.
+# In our case, we iterate two lists, each iterable list being assigned to a separate variable.
+header = "Two lists at the same time"
+print(f"{HRULE}\n\t{header}\n{HRULE}")
+listA = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+listB = [1, 2, 3, 4, 5, 6, 7, 8]
+for aa, bb in zip(listA, listB):
+    print(f"Value from A: {aa}\t Value from B: {bb}")
